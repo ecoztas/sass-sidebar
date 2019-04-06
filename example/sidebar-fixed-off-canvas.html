@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>sidebar-fixed-off-canvas</title>
+    <!-- Style file(s). -->
+    <link rel="stylesheet" href="../dist/sidebar-fixed-off-canvas.min.css">
+</head>
+
+<body>
+    <div id="l_page">
+        <div id="l__sidebar">
+            <div class="m_main">
+                <h1>sidebar-fixed-off-canvas</h1>
+            </div>
+        </div>
+        <div id="l__content">
+            <div class="m_main">
+                <button class="m_button" id="launcher">Sidebar Trigger</button>
+            </div>
+        </div>
+    </div>
+    <!-- Script file(s). -->
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('#launcher').click(function() {
+            $('#l__sidebar, #l__content').toggleClass('launch');
+        });
+    });
+    </script>
+</body>
+
+</html>

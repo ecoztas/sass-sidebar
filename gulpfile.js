@@ -20,7 +20,7 @@ gulp.task('default', function() {
     console.log('Works fine!');
 });
 
-// TASK: LESS
+// TASK: SASS
 gulp.task('sass', function() {
     return (
         gulp.src('./sass/*.scss')

@@ -74,14 +74,14 @@ body {
         margin-left: - #{map-get($sidebar, width)};
     }
 
+    #l__content {
+        width: 100% !important;
+    }
+
     #l__sidebar {
         &.launch {
             margin-left: 0;
         }
-    }
-
-    #l__content {
-        width: 100% !important;
     }
 
     #l__content {

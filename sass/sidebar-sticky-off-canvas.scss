@@ -1,0 +1,94 @@
+/**
+ * -----------------------------------------------------------------------------
+ * sidebar-sticky-off-canvas.scss
+ * Author: Emre Can ÖZTAŞ <me@emrecanoztas.com>
+ * -----------------------------------------------------------------------------
+ */
+
+@charset 'utf-8';
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
+
+$font: 'Poppins', sans-serif;
+$transition: all 0.6s;
+$screens: (
+    mobile: 320px,
+    tablet: 768px,
+    desktop: 1024px
+);
+$sidebar: (
+    width: 230px,
+    color: #fff,
+    background: #303030
+);
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+    height: 100%;
+    box-sizing: border-box;
+    font-family: $font;
+}
+
+#l_page {
+    width: 100%;
+    display: flex;
+
+    #l__sidebar {
+        top: 0;
+        left: 0;
+        min-height: 100vh;
+        position: relative;
+        min-width: map-get($sidebar, width);
+        max-width: map-get($sidebar, width);
+        background-color: map-get($sidebar, background);
+        color: map-get($sidebar, color);
+        transition: $transition;
+    }
+
+    #l__content {
+        width: 100%;
+        transition: $transition;
+    }
+}
+
+#l__sidebar {
+    &.launch {
+        margin-left: - #{map-get($sidebar, width)};
+    }
+}
+
+@media (max-width: map-get($screens, tablet)) {
+    #l__sidebar {
+        margin-left: - #{map-get($sidebar, width)};
+    }
+
+    #l__sidebar {
+        &.launch {
+            margin-left: 0;
+        }
+    }
+}
+
+// -----------------------------------------------------------------------------
+// Module(s).
+// -----------------------------------------------------------------------------
+.m_main {
+    padding: 20px;
+    margin: 10px;
+}
+
+.m_button {
+    color: #fff;
+    background-color: #303030;
+    padding: 10px;
+    border: none;
+}
+// -----------------------------------------------------------------------------

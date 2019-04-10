@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/**
+ * -----------------------------------------------------------------------------
+ * sidebar-overlay-sticky-left.scss
+ * Author: Emre Can ÖZTAŞ <me@emrecanoztas.com>
+ * -----------------------------------------------------------------------------
+ */
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700");
+*,
+*:before,
+*:after {
+  box-sizing: inherit; }
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; }
+
+#l_sidebar {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1000;
+  overflow-x: hidden;
+  color: #fff;
+  background-color: #303030;
+  transition: all 0.6s; }
+
+#l_sidebar.launch {
+  width: 230px; }
+
+.m_main {
+  padding: 20px;
+  margin: 10px; }
+
+.m_button-launcher {
+  color: #fff;
+  background-color: #303030;
+  padding: 10px;
+  border: none; }
+
+.m_button-closer {
+  color: #303030;
+  background-color: #fff;
+  padding: 10px;
+  border: none; }

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /**
  * -----------------------------------------------------------------------------
- * sidebar-overlay-full-down.scss
+ * sidebar-overlay-full-left.scss
  * Author: Emre Can ÖZTAŞ <me@emrecanoztas.com>
  * -----------------------------------------------------------------------------
  */
@@ -23,8 +23,8 @@ body {
 #l_sidebar {
   top: 0;
   left: 0;
-  height: 0px;
-  width: 100%;
+  height: 100%;
+  width: 0%;
   position: fixed;
   z-index: 1000;
   color: #fff;
@@ -33,7 +33,7 @@ body {
   transition: all 0.6s; }
 
 #l_sidebar.launch {
-  height: 100% !important; }
+  width: 100% !important; }
 
 .m_main {
   padding: 20px;

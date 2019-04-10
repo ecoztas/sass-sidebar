@@ -1,11 +1,8 @@
 /**
- * @name            sass-sidebar
- * @file            gulpfile.js
- * @version         1.0.0
- * @description     Creating Sidebar With SASS
- * @repository      https://github.com/oztasemrecan/sass-sidebar
- * @author          Emre Can ÖZTAŞ (ecoztas) <me@emrecanoztas.com>
- * @license         MIT
+ * -----------------------------------------------------------------------------
+ * gulpfile.js
+ * Author: Emre Can ÖZTAŞ <me@emrecanoztas.com>
+ * -----------------------------------------------------------------------------
  */
 
 // DEFINE: Package(s).

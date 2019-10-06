@@ -49,7 +49,7 @@ body {
         width: map-get($sidebar, width);
         background-color: map-get($sidebar, background);
         transition: $transition;
-        min-height: 100vh;
+        min-height: 100%;
         z-index: 1000;
     }
 

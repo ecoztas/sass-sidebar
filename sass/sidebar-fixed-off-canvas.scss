@@ -45,12 +45,13 @@ body {
         top: 0;
         left: 0;
         position: fixed;
-        color: map-get($sidebar, color);
-        width: map-get($sidebar, width);
-        background-color: map-get($sidebar, background);
+        overflow-y: auto;
         transition: $transition;
-        min-height: 100%;
+        height: 100%;
         z-index: 1000;
+        width: map-get($sidebar, width);
+        color: map-get($sidebar, color);
+        background-color: map-get($sidebar, background);
     }
 
     #l__content {
